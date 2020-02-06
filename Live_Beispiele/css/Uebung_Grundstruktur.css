@@ -1,0 +1,40 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: dodgerblue;
+}
+
+.company-name{
+    font-family: 'Bauhaus 93', sans-serif;
+    font-size: 42px;
+    background-color: orange;
+    color: yellow;
+    height: 150px;
+}
+
+.main-nav{
+    background-color: limegreen;
+    color: white;
+    height: 90px;
+}
+
+.content-container{
+    background-color:gold;
+}
+
+.image-container{
+    height: 20em;
+}
+
+.image-container img{
+    height: 100%;
+}
+
+.main-footer{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    height: 10rem;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Block- und Inline-Elemente</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .demo01 {
+            height: 150px;
+            background-color: mediumslateblue;
+        }
+
+        .demo02 {
+            height: 150px;
+            width: 350px;
+            background-color: olive;
+        }
+
+        .demo03 {
+            height: 150px;
+            background-color: peru;
+        }
+
+        .demo04 {
+            /* height und width wird von inline-Element ignoriert! */
+            display: inline;
+            height: 150px;
+            width: 70px;
+            background-color: plum;
+        }
+
+        .demo05 {
+            display: inline-block;
+            /* die Elemente verhalten sich jetzt wie inline-Elemente (also wie Text)  */
+            height: 150px;
+            width: 150px;
+            background-color: powderblue;
+            border: 3px solid black;
+            /* Rahmen, Rand */
+        }
+
+        .inline-container{
+            background-color: lemonchiffon;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="demo01"></div>
+    <div class="demo02"></div>
+    <div class="demo03"></div>
+    <p class="demo01"></p>
+    <hr>
+    <span class="demo04">TESTTEXT</span>
+    <span>Testtext2</span>
+    <span>Testtext3</span>
+    <span>Testtext4</span>
+
+    <hr>
+    <div class="inline-container">
+        <div class="demo05"></div>
+        <div class="demo05"></div>
+        <div class="demo05"></div>
+        <div class="demo05"></div>
+    </div>
+</body>
+
+</html>

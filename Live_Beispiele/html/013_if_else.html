@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>if-else</title>
+    <style>
+        .demo {
+            height: 100px;
+            width: 50%;
+            border: 2px solid darkslateblue;
+            margin-bottom: 10px;
+        }
+        input{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input id="num" type="text" onchange="checkVal()">
+    <div class="demo" id="demo"></div>
+
+    <script>
+
+        var num = document.getElementById('num');
+        var demoDiv = document.getElementById('demo');
+        var x = 7;
+
+        if(x === 5){
+            console.log('x hat den Wert 5.');
+        }
+        else if(x === 7){
+            console.log('x hat den Wert 7.');
+        }
+        else if(x === 9){
+            console.log('x hat den Wert 9.');
+        }
+        else{
+            console.log('Fehlermeldung!');
+        }
+
+        function checkVal(){
+            if(num.value < 10){
+                demoDiv.innerHTML = 'Wert ist kleiner als 10.';
+            }
+            else if(num.value > 10){
+                demoDiv.innerHTML = 'Wert ist größer als 10.';
+            }
+            else if(num.value === 10){
+                demoDiv.innerHTML = 'Wert ist exakt 10.';
+            }
+            else{
+                demoDiv.innerHTML = 'Bitte geben Sie eine Zahl ein.';
+            }
+        }
+        
+
+
+
+    </script>
+</body>
+
+</html>

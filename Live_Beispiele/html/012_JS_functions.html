@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funktionen</title>
+    <style>
+        .demo{
+            height: 100px;
+            width: 50%;
+            border: 2px solid darkslateblue;
+            margin-bottom: 10px;
+        }
+
+        .demo02{
+            width: 30px;
+            /* height: 20px; */
+            padding: 5px;
+            background-color: deepskyblue;
+            border: 2px solid lightcyan;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="demo" class="demo"></div>
+    <div id="demo02" class="demo02">OK</div>
+    <button onclick="bgCol()">OK</button>
+
+    <script>
+        
+        function bgCol(){
+            // div{background-color: black}
+            document.getElementById('demo').style.backgroundColor = 'khaki';
+        }
+
+        /* Funktionsaufruf (function call) */
+        // bgCol();
+
+
+        // document.getElementById('demo02').addEventListener('click', bgCol);
+        
+        var demoDiv02 = document.getElementById('demo02');
+
+        /* anonyme Funktion */
+        demoDiv02.addEventListener('click', function(){
+            document.getElementById('demo').style.backgroundColor = 'cyan';
+        });
+
+
+        function demoCalc(a, b){
+            return a * b
+        }
+
+        console.log('a*b = ' + demoCalc(3, 5));
+        
+
+
+    </script>
+</body>
+</html>

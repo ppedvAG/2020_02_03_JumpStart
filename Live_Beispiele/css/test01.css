@@ -1,0 +1,72 @@
+html{
+    font-size: 20px;
+}
+
+body{
+    margin: 0;
+}
+
+.container div{
+    margin-bottom: 30px;
+}
+
+.px-test{
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+}
+
+.em-test{
+    background-color: darkgreen;
+    font-size: 16px;
+    width: 12.5em;
+    height: 12.5em;
+}
+
+.rem-test{
+    background-color: darkslateblue;
+    width: 10rem;
+    height: 10rem;
+}
+
+.percent-test{
+    background-color: cadetblue;
+    width: 100%;
+    height: 200px;
+}
+
+/* vw = viewport width (Breite des viewports) */
+.vw-test{
+    background-color: dodgerblue;
+    /* viewport-Breite (berücksichtigt NICHT den seitlichen Scrollbalken
+        ACHTUNG: wird dann breiter als die Seite!) */
+    width: 100vw;
+    /* Höhe in vw macht nicht viel Sinn! */
+    height: 10vw;
+    font-size: 2vw;
+}
+
+/* vh = viewport height */
+.vh-test{
+    background-color: greenyellow;
+    /* width macht nicht viel Sinn mit vh!!! */
+    width: 20vh;
+    height: 100vh;
+}
+
+
+.container2{
+    background-color: lightskyblue;
+    height: 200px;
+}
+
+
+.inner-test{
+    background-color: mediumblue;
+    height: 100%;
+    width: 150px;
+}
+
+
+
+

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/011_JS_Basics.css">
+    <script src="../js/011_JS_Basics.js" defer></script>
+    <title>JS-Basics</title>
+    <style>
+        .demo01{
+            height: 100px;
+            width: 50%;
+            border: 2px solid darkslateblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="demo01" class="demo01"></div>
+
+    <script>
+        // einzeilige Kommentare
+        /* mehrzeilige
+           Kommentare
+        */
+
+        /* Variablen */
+        /* Variablendeklaration */
+
+        var x;
+        var text;
+        var firstName;
+
+
+        /* Konstanten (constants) */
+        const MwSt = 0.19;
+
+        /* mehrere auf einmal deklarieren */
+
+        var i, z, fullName;
+
+
+        /* Initialisierung */
+        x = 5;
+
+
+        var y = 7;
+
+        var z = x + y;
+
+
+        //console.log(z);
+
+        x = x + 3;
+
+        //console.log(x); // ab hier ist der Wert für x = 8
+
+        x = x + y;
+        //console.log(x); // ab hier ist der Wert für x = 15
+
+
+        x = x + 1;
+        x++;
+
+        /* bei Schleifen oft mit i (für "iterator", Zähler) */
+        i = 0;
+        i = i + 1;
+        i++;
+        // i--;
+
+        x = x - 1;
+        x--;
+
+
+        x = x + 5;
+        x += 5;
+
+        x = x - 5;
+        x -= 5;
+
+        /* Operatoren */
+        /* 
+            +, -, *, /
+            ++, -- //increment, decrement
+            +=, -=, *=, /=
+            % // Modulus-Operator
+
+            // Vergleichsoperatoren
+
+            ==, != (NOT, also NICHT gleich), <=, >=
+            ===, !== // fragt auch den Datentyp ab
+
+            // logische Operatoren
+
+            && // logisches UND
+            || // logisches ODER
+            !  // logisches NICHT
+
+        
+        
+        
+        */
+
+
+        /* 
+
+            // DATENTYPEN
+
+
+            number (Zahl)
+            5
+            -5
+            5.3
+            3.33333333333333
+            123e5 (Exponentialschreibweise)  12300000
+            123e-5 0.00123
+
+            string (String)
+            'Text'
+            "Text"
+            'das ist ein "String"'
+            "das ist ein 'String'"
+
+            boolean (Boolean)
+            true/false
+
+            object (Objekt)
+
+
+        
+        */
+
+
+
+        q = '15';
+        
+
+        var lastName = 'Bond';
+        firstName = 'James';
+
+        fullName = firstName + ' ' + lastName;
+
+        // console.log(fullName);
+
+        console.log(firstName + ' ' + lastName);
+
+        console.log('aktueller Wert von x = ' + x);
+
+
+        console.log(x + q);
+
+
+        // console.log(x == q); // Antwort true oder false; mit == true
+        // console.log(x === q); // mit === false (unterschiedlicher Datentyp)
+
+
+        // document.getElementById('demo01').innerHTML = '<p>' + 'Hallo!' + '</p>';
+
+        var demoDiv01 = document.getElementById('demo01');
+
+        demoDiv01.innerHTML = '<p>' + 'Hallo!' + '</p>';
+
+
+        text = 'Mein Name ist ';
+        text += fullName;
+        text += '.';
+
+
+        demoDiv01.innerHTML += text;
+
+        demoDiv01.style.color = 'red';
+
+        demoDiv01.style.backgroundColor = "khaki";
+        
+    </script>
+</body>
+</html>

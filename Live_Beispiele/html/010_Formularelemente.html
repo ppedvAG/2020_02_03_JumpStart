@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularelemente</title>
+    <style>
+        
+        .inp-container {
+            /* border: 1px solid black; */
+            margin-bottom: 15px;
+            /* display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;*/
+            /* background-color: cadetblue; */ 
+            padding: 5px;
+            width: 50%;
+        }
+
+        .lb-format{
+            display: inline-block;
+            width: 33%;
+            /* background-color: coral; */
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+    <!-- action: wo wird das Formular hingeschickt zum Auswerten (z.B. php-script...) -->
+    <form action="#" method="POST">
+
+        <div class="inp-container">
+            <label for="first-name" class="lb-format">Vorname:</label>
+            <input id="first-name" class="my-inp" name="first-name" type="text">
+        </div>
+        <div class="inp-container">
+            <label for="last-name" class="lb-format">Nachname:</label>
+            <input id="last-name" class="my-inp" name="last-name" type="text">
+        </div>
+        <div class="inp-container">
+            <label for="pw" class="lb-format">Passwort:</label>
+            <input id="pw" class="my-inp" name="pw" type="password">
+        </div>
+
+        <!-- Dropdown-Auswahlfeld -->
+        <label for="">Pizzas</label>
+        <select name="pizzas" id="pizzas">
+            <option value="margherita">Margherita</option>
+            <option value="tonno">Tonno</option>
+            <option value="dellacasa">Della Casa</option>
+            <option value="funghi">Funghi</option>
+        </select>
+
+        <input type="submit" value="Abschicken"><!-- Abschicken-Button -->
+        <!-- <button>OK</button> -->
+
+
+    </form>
+
+</body>
+
+</html>

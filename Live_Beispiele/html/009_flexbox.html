@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .flex-container{
+            display: flex; /* damit mache ich das div zu einer Flexbox */
+            flex-wrap: wrap;/* ermöglicht in die nächste umspringen, wenn es sich in einer Zeile nicht mehr ausgeht  */
+
+            /* flex-direction: column; *//* macht nur Sinn in Kombination mit fixer Höhe */
+            height: 500px;
+
+            justify-content: space-between;/* horizontale Ausrichtung der Elemente in der Flexbox */
+            /* 
+                sinnvolle Werte für justify-content:
+                center = zentrieren
+                space-between = wie Blocksatzausrichtung
+                space-around = verbleibender Platz wird rund um die Elemente in der Flexbox gleichmäßig verteilt
+            
+            */
+
+            align-items: center;/* vertikale Ausrichtung; macht auch nur in Kombination mit fixer Höhe Sinn */
+            /* 
+                center = vertikal zentrieren
+                stretch = erstreckt sich über die maximal mögliche Höhe (funktioniert nur,
+                          wenn die flex-items keine fixe Höhe haben, aber die Flexbox selbst
+                          schon eine fixe Höhe hat)
+            */
+
+            background-color: lightblue;
+        }
+
+        .flex-item{
+            background-color: lightcyan;
+            border: 2px solid darkblue;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+    </div>
+
+
+</body>
+</html>

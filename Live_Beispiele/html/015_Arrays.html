@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays</title>
+    <style>
+        div[class^="demo"]{
+            height: 100px;
+            width: 50%;
+            border: 2px solid darkslateblue;
+            margin-bottom: 10px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="demo01" class="demo01"></div>
+    <div id="demo02" class="demo02"></div>
+    <div id="demo03" class="demo03"></div>
+    <div id="demo04" class="demo04"></div>
+
+
+    <script>
+        /* ARRAYS */
+
+
+        var fruitSalad = ['Banane', 'Apfel', 'Kiwi', 'Mango'];
+//    Stelle                 0         1        2        3
+//    length                 1         2        3        4
+
+        var citrusFruits = ['Orange', 'Kumquat', 'Limette'];
+
+
+
+        var demoDiv01 = document.getElementById('demo01');
+        var demoDiv02 = document.getElementById('demo02');
+        var demoDiv03 = document.getElementById('demo03');
+        var demoDiv04 = document.getElementById('demo04');
+
+
+
+        // demoDiv01.innerHTML = fruitSalad;
+
+        // mit join bestimmen, wie getrennt werden soll
+        demoDiv01.innerHTML = fruitSalad.join(', ');
+
+        // hinzufügen, wegnehmen mit pop und push
+
+        fruitSalad.pop();
+        demoDiv02.innerHTML = fruitSalad.join(', ');
+
+        fruitSalad.push('Kirschen');
+        demoDiv03.innerHTML = fruitSalad.join(', ');
+
+
+        fruitSalad.splice(1, 0, 'Birne', 'Pflaume');
+        demoDiv04.innerHTML = fruitSalad.join(', ');
+
+        // zwei Arrays zusammenlegen mit concat (concatenate)
+        var allFruits = fruitSalad.concat(citrusFruits);
+        demoDiv04.innerHTML += '<br>' +  allFruits.join(', ');
+
+
+        demoDiv04.innerHTML += '<br>' + fruitSalad[2];
+        
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>float</title>
+    <style>
+
+        .float-container{
+            background-color: greenyellow;
+        }
+        .float-demo {
+            margin-right: 15px;
+            background-color: steelblue;
+            height: 200px;
+            width: 200px;
+            border: 2px solid darkslateblue;
+            float: left;
+        }
+
+        /* .clearboth{
+            clear: both;
+        } */
+
+        .float-container::after{
+            content: '';/* hat keinen Inhalt */
+            display: block;/* = Blockelement */
+            clear: both;/* links und rechts davon darf nichts stehen */
+        }
+
+        .demo05 {
+            display: inline-block;
+            /* die Elemente verhalten sich jetzt wie inline-Elemente (also wie Text)  */
+            height: 150px;
+            width: 150px;
+            background-color: powderblue;
+            border: 3px solid black;
+            /* Rahmen, Rand */
+        }
+
+        .inline-container{
+            background-color: lemonchiffon;
+        }
+
+
+        /* +++++++++++++++++++++++++++ TEST ++++++++++++++++++++++++ */
+
+        .demo-container{
+            /* background-color: #336B87; */
+        }
+
+        .demo-container::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .bluebox{
+            /* background-color: #90AFC5; */
+            width: 33.33333%;
+            height: 250px;
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .inner-demo{
+            background-color: #763626;
+            height: 100%;
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="float-container">
+        <div class="float-demo"></div>
+        <div class="float-demo"></div>
+        <div class="float-demo"></div>
+        <div class="float-demo"></div>
+        <div class="float-demo"></div>
+        <!-- <div class="clearboth"></div> -->
+    </div>
+    <div class="inline-container">
+        <div class="demo05"></div>
+        <div class="demo05"></div>
+        <div class="demo05"></div>
+        <div class="demo05"></div>
+    </div>
+
+
+    <hr>
+
+
+    <!-- +++++++++ TEST +++++++++++++++++++++++++ -->
+
+    <div class="demo-container">
+        <div class="bluebox">
+            <div class="inner-demo"></div>
+        </div>
+        <div class="bluebox">
+            <div class="inner-demo"></div>
+        </div>
+        <div class="bluebox">
+            <div class="inner-demo"></div>
+        </div>
+    </div>
+</body>
+
+</html>

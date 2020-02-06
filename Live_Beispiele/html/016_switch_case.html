@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>switch-case</title>
+    <style>
+        .demo {
+            height: 100px;
+            width: 50%;
+            border: 2px solid darkslateblue;
+            margin-bottom: 10px;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="textInp" type="text" onchange="checkInp()">
+    <div class="demo" id="demo"></div>
+
+    <script>
+
+        var textInp = document.getElementById('textInp');
+        var demoDiv = document.getElementById('demo');
+        var text = '';
+
+        function checkInp() {
+
+            var textInp = document.getElementById('textInp').value.toUpperCase();
+
+
+            switch (textInp) {
+                case 'MONTAG':
+                    text = 'Oje, wir müssen arbeiten!';
+                    break;
+                case 'DIENSTAG':
+                    text = 'Oje, wir müssen immer noch arbeiten!';
+                    break;
+                case 'SONNTAG':
+                    text = 'Juhuu, Wochenende!';
+                    break;
+                default:
+                    text = 'Bitte geben Sie einen Wochentag ein!';
+            }
+
+
+            demoDiv.innerHTML = text;
+
+        }
+
+    </script>
+</body>
+
+</html>

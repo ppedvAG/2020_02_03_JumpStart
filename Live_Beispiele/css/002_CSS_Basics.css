@@ -1,0 +1,89 @@
+
+/* 
+    einzeilige und mehrzeilige Kommentare in CSS
+*/
+
+/* SELEKTOREN */
+
+/* TYPSELEKTOR */
+/* gilt für ALLE Elemente des selektierten Typs */
+p{
+    color: red;
+}
+
+div{
+    background-color: khaki;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ****************************************************************************** */
+
+/* KLASSENSELEKTOR */
+/* gilt für alle Elemente, denen dieser Klassenname vergeben wurde */
+/* Punkt davor heißt "hierbei handelt es sich um einen Klassennamen" */
+
+.my-great-class{
+    text-decoration: underline;
+}
+
+
+/* ID-SELEKTOR */
+/* ID ist eindeutig - darf nur dieses eine Element haben */
+/* # davor heißt "hierbei handelt es sich um eine ID" */
+#my-great-id{
+    font-style: italic;
+}
+
+
+
+/* Kombinatoren */
+
+/* alle Paragraphen, die sich innerhalb eines Divs befinden */
+div p{
+
+}
+
+/* alle Elemente mit der Klasse .my-great-class, die sich innerhalb eines Divs befinden */
+div .my-great-class{
+
+}
+
+/* wenn Spezifität gleich ist, gewinnt das, was als letztes da steht:
+   Schriftfarbe wurde oben als rot definiert, hier als grün, wird überschrieben
+ */
+p{
+    color: green;
+}
+
+
+.test-color{
+    color: gold;
+}
+
+#test-color{
+    color: blueviolet;
+}
+
+/* ******************************************************* */
+
+.bg-demo{
+    color: yellow;
+    background-color: forestgreen;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* height: 200px; */
+    width: 250px;
+    /* overflow-y: scroll; */
+}
+
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 42px;
+}
+
+.link-no-underline{
+    text-decoration: none;
+}
